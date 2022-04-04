@@ -1,0 +1,29 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+<title>Add an Artist here</title>
+{% endblock %}
+
+{% block content %}
+<div class='form'>
+    <h1>Add Artist</h1>
+    <br>
+    <form method='POST' action=''>
+        <!--The hidden tag here is necessary for CSRF protection (always include in forms)-->
+        {{ form.hidden_tag() }}
+        <!--We display the username field label and the field itself-->
+        {{ form.artist_name.label }}
+        {{ form.artist_name }}
+        <!--Here, we want our page to catch and display any errors raised. The if statement checks if a ValidationError object exists and if so, present the message-->
+        {% if form.artist_name.errors %}
+        <div class='error'>
+            {% for error in form.artist_name.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <br>
+        {{ form.submit }}
+    </form>
+</div>
+{% endblock %}
