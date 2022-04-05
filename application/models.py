@@ -15,5 +15,4 @@ class Music(db.Model):
 
 class AddArtistForm(FlaskForm):
     artist_name = StringField('Artist Name')
-    # artist_id = QuerySelectField('Artist', query_factory=artist_query, allow_blank=True)
     submit = SubmitField('Add Artist!')
