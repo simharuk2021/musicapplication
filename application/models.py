@@ -21,6 +21,11 @@ class AddArtistForm(FlaskForm):
 
 class AddMusicForm(FlaskForm):
     track_name = StringField('Track Name')
-    artist_name = SelectField('Artist Name', coerce=int)
+    artist_name = SelectField(u'Artist Name', choices = [])
     submit = SubmitField('Add Track!')
+def add_album(request, id):
+    artist = Artist.query.get(id)
+    form = ArtistDetails(request.POST, obj=artist)
+    form.artist_id.choices = [(artist.id, artist.artist_name) for artist in Artist.query.order_by(artist_name)]
+
 
