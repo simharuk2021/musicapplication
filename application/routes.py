@@ -33,11 +33,19 @@ def add_music():
     else:
         return render_template('add_music.html', form=form)
 
-'''create a route which displays all the tracks in the database'''
-@app.route('/music_list')   
-def music_list():
-    return render_template('music_list.html', music=Music.query.all())
+@app.route('/music_list')
+def tracks():
+    all_music = Music.query.all()
 
+    return render_template('music_list.html', all_music=all_music)
+
+#create a route to delete music from the database
+@app.route('/delete/<music_id>', methods = ['GET','DELETE'])
+def delete():
+    music = Music.query.join(Artists).all()
+    db.session.delete(music)
+    db.session.commit()
+    return redirect(url_for('music_list.html'))
     
 
 

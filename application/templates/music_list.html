@@ -1,6 +1,12 @@
-{% extends 'navbar.html' %} -->
-    
-    {% block title %}
-        <title>All the music here</title>
-    {% endblock %}
-    
+{% extends 'navbar.html' %}
+
+{% block title %}
+<title>These are the tracks in the app</title>
+{% endblock %}
+
+{% block content %}
+{% for music in all_music %}
+    Track Number: {{music.musicbr.artist_name}} {{music.id}} {{ music.track_name  }} <button class="btn btn-danger">Delete</button></p><br>
+{% endfor %}
+{% endblock %}
+
