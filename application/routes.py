@@ -40,10 +40,10 @@ def tracks():
     return render_template('music_list.html', all_music=all_music)
 
 #create a route to delete music from the database
-@app.route('/delete/<music_id>', methods = ['GET','DELETE'])
-def delete():
-    music = Music.query.join(Artists).all()
-    db.session.delete(music)
+@app.route('/delete/<track_name>', methods = ['GET', 'DELETE'])
+def delete(track_name):
+    delete_music = Music.query.filter_by(track_name=track_name).first()
+    db.session.delete(delete_music)
     db.session.commit()
     return redirect(url_for('music_list.html'))
     

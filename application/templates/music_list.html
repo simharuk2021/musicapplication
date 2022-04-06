@@ -1,12 +1,13 @@
 {% extends 'navbar.html' %}
 
 {% block title %}
-<title>These are the tracks in the app</title>
+<title>Playlist</title>
 {% endblock %}
 
 {% block content %}
+<h2> Current playlist </h2>
 {% for music in all_music %}
-    Track Number: {{music.musicbr.artist_name}} {{music.id}} {{ music.track_name  }} <button class="btn btn-danger">Delete</button></p><br>
+    {{music.musicbr.artist_name}} {{music.id}} {{ music.track_name  }} <a href="{{ url_for('delete', track_name = music.id) }}"><button type="button">delete</button></p><br>
 {% endfor %}
 {% endblock %}
 
