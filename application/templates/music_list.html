@@ -6,8 +6,8 @@
 
 {% block content %}
 <h2> Current playlist </h2>
-{% for music in all_music %}
-    {{music.musicbr.artist_name}} {{music.id}} {{ music.track_name  }} <a href="{{ url_for('delete', track_name = music.id) }}"><button type="button">delete</button></p><br>
+{% for music in all_music %}.
+    {{music.musicbr.artist_name}} {{ music.track_name  }} <a href="{{ url_for('delete', track_name = music.track_name) }}"><button type="button">delete</button></a></p><br>
 {% endfor %}
 {% endblock %}
 

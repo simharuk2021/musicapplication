@@ -45,9 +45,25 @@ def delete(track_name):
     delete_music = Music.query.filter_by(track_name=track_name).first()
     db.session.delete(delete_music)
     db.session.commit()
-    return redirect(url_for('music_list.html'))
+    return redirect(url_for('tracks'))
     
+@app.route('/edit_artists')
+def edit():
+    all_artists = Artist.query.all()
 
+    return render_template('edit_artists.html', all_artists=all_artists)
+
+@app.route('/edit_one_artist/<artist_name>', methods = ['GET', 'POST'])
+def edit_artist(artist_name):
+    form = AddArtistForm()
+    edit_one_artist = Artist.query.filter_by(artist_name=artist_name).first()
+    if request.method == 'POST':
+        if edit_one_artist:
+            edit_one_artist.artist_name = form.artist_name.data
+            db.session.commit()
+            return redirect(url_for('edit_artists', message ="Artist Name Updated!"))
+    else:
+        return render_template('edit_one_artist.html', edit_one_artist=edit_one_artist, form=form)
 
 # @app.route('/update/<name>')
 # def update(name):
