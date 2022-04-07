@@ -17,7 +17,7 @@ class Music(db.Model):
     
 class AddArtistForm(FlaskForm):
     artist_name = StringField('Artist Name')
-    submit = SubmitField('Add Artist!')
+    submit = SubmitField('Add Name!')
 
 class AddMusicForm(FlaskForm):
     track_name = StringField('Track Name')

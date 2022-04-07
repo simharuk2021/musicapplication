@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<h2> The artist you want to edit is </h2> {{ edit_one_artist_name }}
+<h2> Enter the new artist name for {{ edit_one_artist.artist_name }} </h2> 
 <br>
 <div>
     <form action ="{{ url_for('edit_artist', artist_name = edit_one_artist.artist_name) }}" method='POST'>

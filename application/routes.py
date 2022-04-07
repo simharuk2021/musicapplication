@@ -61,7 +61,7 @@ def edit_artist(artist_name):
         if edit_one_artist:
             edit_one_artist.artist_name = form.artist_name.data
             db.session.commit()
-            return redirect(url_for('edit_artists', message ="Artist Name Updated!"))
+            return redirect(url_for('edit', message ="Artist Name Updated!"))
     else:
         return render_template('edit_one_artist.html', edit_one_artist=edit_one_artist, form=form)
 
