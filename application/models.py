@@ -1,6 +1,7 @@
 from application import db
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, BooleanField, IntegerField, SelectField
+from wtforms.validators import DataRequired
 
 class Artist(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -16,11 +17,11 @@ class Music(db.Model):
     artist_id = db.Column(db.Integer, db.ForeignKey('artist.id'), nullable=False)
     
 class AddArtistForm(FlaskForm):
-    artist_name = StringField('Artist Name')
+    artist_name = StringField('Artist Name', validators=[DataRequired()])
     submit = SubmitField('Add Name!')
 
 class AddMusicForm(FlaskForm):
-    track_name = StringField('Track Name')
+    track_name = StringField('Track Name', validators=[DataRequired()])
     artist_name = SelectField(u'Artist Name', choices = [])
     submit = SubmitField('Add Track!')
 def add_album(request, id):

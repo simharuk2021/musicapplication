@@ -3,3 +3,5 @@ flask_sqlalchemy
 flask-wtf
 pymysql
 SQLAlchemy
+pytest
+pytestcov
