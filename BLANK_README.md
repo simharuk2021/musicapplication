@@ -93,15 +93,9 @@ Essentially the application is designed to demonstrate the implementation of lea
 | Trello board  | Kanban board withfull expansion on user stories, use cases, tasks and issues within the project.|
 | Relational Database | persistent storage with at least 2 tables in it |
 | Clear Documentation | Design phases, architecture and risk assessment |
-| Get UserData by Username | GET |
-| Get All Movies | GET |
-| Get Movie Data by Title | GET |
-| Get Genre Name | GET |
-| Get Director Details | GET |
-| Add a movie to Favorites | POST |
-| Delete a movie from Favorites | DELETE  |
-| Deregister a User by Username | DELETE |
-| Update User (same endpoint as Register but different HTTP request) | PUT |
+| CRUD application | Create an app which Reads, Creates, Updates and Deletes Using Python best practices |
+| Fully designed test suites | create and run automated tests to provide a high level of coverage |
+| Functioning front-end | Create an integrated API and front end using Flask |
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
