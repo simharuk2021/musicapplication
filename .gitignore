@@ -1,3 +1,5 @@
 ignore.txt
 .venv
 _pycache_ 
+venv
+._pycache_ 
