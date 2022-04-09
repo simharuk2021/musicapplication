@@ -197,9 +197,9 @@ Within Jenkins a link to the github repository (hosting the source code) was mad
 
 ## Issues
 
-During the design stage the initial application had three tables.  The first two were Artists and Music and the third was going to be album.  This would have allowed created an additional relationship of many Artists to one Album.  Whilst at the beginning stage I did not feel this to be too ambitious, however due to tutor absence resuting in scaled back support, the more realistic decision was to create a more basic app which functioned well and met the MVP requirements.    
+During the design stage the initial application had three tables.  The first two were Artists and Music and the third was going to be album.  This would have allowed created an additional relationship of many Artists to one Album.  Whilst at the beginning stage I did not feel this to be too ambitious, however due to tutor absence resulting in scaled back support, the more realistic decision was to create a more basic app which functioned well and met the MVP requirements.    
 
-There were also some issues whilst developing the app with the connection string and the repitition of running the same commands.  These issues were averted by the use of a text file containing an ordered list of commands alongside the connection string which could be copied into the terminal.  For the purposes of security this file was included in the .gitignore file and was prevened from being made visible in the public repository. 
+There were also some issues whilst developing the app with the connection string and the repitition of running the same commands.  These issues were averted by the use of a text file containing an ordered list of commands, alongside the connection string which could be copied into the terminal.  For the purposes of security this file was included in the .gitignore file and was prevened from being made visible in the public repository. 
 
 In terms of the infrastructure issues also arose due to my VM having 1GB of RAM.  As the application became more complex the operations took longer and eventually began to seize.  With tutor support I was able to upgrade the VM whilst maintaining persistent data storage.
 
@@ -223,6 +223,7 @@ Additionally I would like to have attained 100% test coverage but would need mor
 * Earl Gray (QA Tutor)
 * Leon Robinson (QA Tutor)
 * Harry Volter (QA Tutor)
+* general support from the friendly 22MarEnable1 cohort.
 
 ## Project by
 
