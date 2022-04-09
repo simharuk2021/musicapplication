@@ -35,6 +35,11 @@ class TestViews(TestBase):
             self.assertEqual(response.status_code, 200)
             self.assertIn(b'Add Artist', response.data)
 
+        def test_home_music_list(self):
+            response = self.client.get(url_for('tracks'))
+            self.assertEqual(response.status_code, 200)
+            self.assertIn(b'Test Track', response.data)
+
 class TestData(TestBase):
 
     def test_add_artist(self):
