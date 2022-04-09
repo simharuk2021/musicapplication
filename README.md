@@ -23,7 +23,8 @@
 11. [Issues](#issues)
 12. [Future Consideration](#future)
 
-  
+<p align="right">(<a href="#top">back to top</a>)</p>  
+
 <!-- ABOUT THE PROJECT -->
 ## project brief
 <a name="brief"/>
@@ -41,6 +42,7 @@ Essentially the application is designed to demonstrate the implementation of lea
 | Functioning front-end | Create an integrated API and front end using Flask |
 
 ## Planning 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="planning"/>
 The planning stage involved the use of Trello as a project management tool where a workboard was created to hold the User Stories and to record the progress of the various build stages of the application
 
@@ -50,6 +52,7 @@ The planning stage involved the use of Trello as a project management tool where
 </div>
 
 ## Risk Assessment
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="risk"/>
 
 A risk assessment was generated to ensure the build process went as smoothly as possible and introduced control measures for the potentialy adverse effects of the variables identified.
@@ -59,6 +62,7 @@ A risk assessment was generated to ensure the build process went as smoothly as 
 </div>
 
 ## User Stories 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="user"/>
 implemented:
 
@@ -76,6 +80,7 @@ not implemented
 
 
 ## Creating the Database
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="createdb"/>
 The database was created using mySQL and the initial plan was to create three tables.  One to hold data for Artists, one to hold data for Tracks (one artist to many tracks) and one table to hold data for Albums (many tracks to many artists).  However as the MVP involved creating two tables the tables Artist and Music were implemented first as these would form the core functionality of the application.  The EDR diagram shows the relationships for these tables.
 
@@ -95,6 +100,7 @@ The app would work by a user entering the details of one of their favourite arti
    <span align="center"> [![Music application](images/musicapp.jpg)](https://youtu.be/yawTCBhiI3M) </span>
 
 ## CRUD
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="crud"/>
 This functionality represents the CREATE, READ, UPDATE and DELETE aspects of data retrieval and manipulation.  For the project CRUD is implemented as follows:
 
@@ -106,6 +112,7 @@ This functionality represents the CREATE, READ, UPDATE and DELETE aspects of dat
 <a name="build"/>
 
 ## Technical Build Requirements
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 * [python 3 ](https://www.python.org/about/) 
 * [Flask](https://flask.palletsprojects.com/en/2.1.x/?msclkid=9eb344a1b67511ec879f0992ab58cf87#user-s-guide)
@@ -122,6 +129,7 @@ In terms of infrastructure the database server was hosted by Google Cloud platfo
 </div>
 
 ## Testing
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="test"/>
 Once the application code was in place and the app was functioning correctly testing was implemented.  Usually the Test Driven Development would be the process to follow (i.e. writing tests before the code and writing the code so the tests pass), however as the project forms part of a wider learning and training exercise this was not an expectation.
 
@@ -164,6 +172,8 @@ The full tests can be found by clicking <a href ="https://github.com/simharuk202
 
 
 ## Build Automation
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="automation"/>
 In building this project a list of commands had to be executed in order to install the various modules and dependencies of the project.  A virtual environment had to be created and then the database connection string had to be exported before the app could be run.  Further commands were required to run the tests and also to generate the reports.  In terms of automation all of these commands could be run using <a href = "https://www.jenkins.io/">Jenkins</a>.
 
@@ -189,6 +199,7 @@ In terms of the infrastructure issues also arose due to my VM having 1GB of RAM.
 
 <a name="future"/>
 ## Future Considerations
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 Given more time I would consider adding more functionality to the app by adding the Album table and also adding a further column to the Artist and Music tables where Users could access the URL of the Artist and potentially listen to the track.
 
