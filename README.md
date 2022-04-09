@@ -6,21 +6,22 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="/images/4375050_logo_python_icon.svg" alt="Logo" width="100" height="100"><img src="/images/317755_badge_html_html5_achievement_award_icon.png" alt="Logo" width="100" height="100"><img src="images/4691324_flask_icon.png" alt="Logo" width="100" height="100">
+    <img src="/images/4375050_logo_python_icon.svg" alt="python" width="100" height="100"><img src="images/4691324_flask_icon.png" alt="flask" width="100" height="100"><img src="/images/317755_badge_html_html5_achievement_award_icon.png" alt="html" width="100" height="100"><img src="/images/jinja.PNG" alt="jinja" width="100" height="100">
 </div>
 
 
 1. [ Project Brief. ](#brief)
 2. [ Planning. ](#planning)
-3. [User Stories](#user)
-4. [Creating the Database](#createdb)
-5. [Walkthrough](#video)
-6. [CRUD](#crud)
-7. [Technical Build Requirement](#build)
-8. [Testing](#test)
-9. [Automation](#automation)
-10. [Issues](#issues)
-11. [Future Consideration](#future)
+3. [Risk Assessment](#risk)
+4. [User Stories](#user)
+5. [Creating the Database](#createdb)
+6. [Walkthrough](#video)
+7. [CRUD](#crud)
+8. [Technical Build Requirement](#build)
+9. [Testing](#test)
+10. [Automation](#automation)
+11. [Issues](#issues)
+12. [Future Consideration](#future)
 
   
 <!-- ABOUT THE PROJECT -->
@@ -48,7 +49,16 @@ The planning stage involved the use of Trello as a project management tool where
     <img src="images/trello.PNG" alt="Logo" width="1000" height="400">
 </div>
 
-### User Stories 
+## Risk Assessment
+<a name="risk"/>
+
+A risk assessment was generated to ensure the build process went as smoothly as possible and introduced control measures for the potentialy adverse effects of the variables identified.
+
+<div align="center">
+    <img src="images/risk_assessment.PNG" alt="Logo" width="1000" height="400">
+</div>
+
+## User Stories 
 <a name="user"/>
 implemented:
 
@@ -120,7 +130,7 @@ https://docs.pytest.org/en/7.1.x/explanation/anatomy.html
 
 Two types of tests were implement 
 * [pytest ](https://docs.pytest.org/en/7.1.x/index.html) - tests which passed if the running code gave expected results
-* [Pytest Coverage] (https://pypi.org/project/pytest-cov/) - a report which indicated the percentage of which the tests covered the entirety of the code base.
+* [Pytest Coverage](https://pypi.org/project/pytest-cov/) - a report which indicated the percentage of which the tests covered the entirety of the code base.
 
 ## Pytest
 
@@ -152,7 +162,7 @@ When run the following output would be displayed in the terminal.
 
 ## Build Automation
 
-In building this project the 
+In building this project a list of commands had to be executed in order to install the various modules and dependencies of the project.  A virtual environment had to be created and then the database connection string had to be exported before the app could be run.  Further commands were required to run the tests and also to generate the reports.  In terms of automation all of these commands could be run using <a href = "https://www.jenkins.io/">Jenkins</a>  
 
 
 <a name="issues"/>
