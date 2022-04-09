@@ -93,8 +93,10 @@ This functionality represents the CREATE, READ, UPDATE and DELETE aspects of dat
 * UPDATE - To update the Artist name
 * DELETE - To delete a track from the database
 
-### Technical Build Requirements
 <a name="build"/>
+
+### Technical Build Requirements
+
 * [python 3 ](https://www.python.org/about/) 
 * [Flask](https://flask.palletsprojects.com/en/2.1.x/?msclkid=9eb344a1b67511ec879f0992ab58cf87#user-s-guide)
 * [Jinga](https://palletsprojects.com/p/jinja/)
@@ -120,12 +122,38 @@ Two types of tests were implement
 * [pytest ](https://docs.pytest.org/en/7.1.x/index.html) - tests which passed if the running code gave expected results
 * [Pytest Coverage] (https://pypi.org/project/pytest-cov/) - a report which indicated the percentage of which the tests covered the entirety of the code base.
 
-##Pytest
+## Pytest
 
-#testbase
+# testbase
 Pytest essentially allowed a test application to be created which ran through all of the build steps including creating the database, tables and then adding in test data.  In this case a "test artist" and "test track" were added into the created database tables and the test ensured that the data had been successfully added into the tables.
 
-In this case a "test artist" and "test track" were added into the created database tables.  Once the data was inside the tables assertions were made that 
+# testviews
+
+These tests passed if executing the route functions resulted in success response codes and the asserted data from the rendered html template ( i.e. the home route had a 200 response code and the word "Music" was rendered in the home template.
+
+# testdata
+
+These tests passed if executing adding data from the form to the route resulted in success response codes and the asserted data from the rendered html template ( i.e. adding "Test Artist" to the add_artist URL resulted in a 200 response code and the word "Artist Added!" was rendered in the home template.
+
+The tests, when run would result in output to the terminal as below
+
+<div align="center">
+    <img src="images/pytest.PNG" alt="Logo" width="1000" height="500">
+</div>
+
+## Pytest Cov
+
+When considering the combined scope of all of the individual tests the coverage report would provide a percentage.  The percentage effectively showed the extent to which the individual tests covered entired the code base.
+When run the following output would be displayed in the terminal.
+
+<div align="center">
+    <img src="images/pytestcov.PNG" alt="Logo" width="1000" height="350">
+</div>
+
+## Build Automation
+
+In building this project the 
+
 
 <a name="issues"/>
 ## ISSUES
