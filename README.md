@@ -216,6 +216,8 @@ Choosing the correct VM performance level could also result in better run speeds
 Due to the unforseen nature of staff absences this is a considerable area which needs to be included in future risk assessments.
 
 Whilst the use of Github Copilot was not particularly useful in the development stage the extension had a massive benefit to the automatic creation of tests, which considerably simplified the testing stage. 
+
+Additionally I would like to have attained 100% test coverage but would need more experience in this aspect so I am considering this a work in progress.
          
 ## Acknowledgements
 * Earl Gray (QA Tutor)
