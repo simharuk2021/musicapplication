@@ -15,7 +15,7 @@
 
    <span align="center"> [![Music application](images/musicapp.jpg)](https://youtu.be/yawTCBhiI3M) </span>
 
-The project is a CRUD application built with the technologies outlined below.  The workspace was created by using tables created in MySQL connected to database server and a Virtual Machine created in Google Cloud.  The specifics of the app are to give users the ability to create a list of their favourite musicians/artists, add tracks to the artists and then generate a list of musicians and their music.  The update and delete functionality allows users to delete tracks from the list and to change the name of the artist.   
+The project is a CRUD application built with the technologies outlined below.  The workspace was created by using tables created in MySQL connected to database server and a Virtual Machine created in Google Cloud.  The specifics of the app are to give users the ability to create a list of their favourite musicians/artists, add tracks to the artists and then generate a list of musicians and their music.  The update and delete functionality allows users to delete tracks from the list and to change the name of the artist.
 
 Essentially the application is designed to demonstrate the implementation of learning gained and meets the following requirements
 
@@ -28,19 +28,58 @@ Essentially the application is designed to demonstrate the implementation of lea
 | Fully designed test suites | create and run automated tests to provide a high level of coverage |
 | Functioning front-end | Create an integrated API and front end using Flask |
 
-<p align="right">(<a href="#project brief">back to top</a>)</p>
+## Getting Started
 
+
+
+## Creating the Database
+
+insert ERD table
+
+
+
+
+### Technical Build Requirements
+
+* [python 3 ](https://www.python.org/about/)
+* [Flask](https://flask.palletsprojects.com/en/2.1.x/?msclkid=9eb344a1b67511ec879f0992ab58cf87#user-s-guide)
+* [Jinga](https://palletsprojects.com/p/jinja/)
+* [mySQL](https://dev.mysql.com/doc/)
+* [Google Cloud Platform](https://cloud.google.com/docs)
+
+
+
+### User Stories 
+
+implemented:
+
+As a User I want to be able to enter a track name and an artist name, so that I can create a record of my favourite music
+
+As a User I want to be able to retrieve a list of the tracks I have saved in the database, so I can view them.
+
+As a User I want to be able to edit the Artist details so I can change the name of the Artist.
+
+As a User I want to be able to delete tracks that I have added as my tastes might change.
+
+not implemented
+
+As a User I want to create records about my favourite artists so I can check their gig schedule and access their musician webpage.
 
 ### Built With
 
 * [python 3 ](https://www.python.org/about/)
 * [Flask](https://flask.palletsprojects.com/en/2.1.x/?msclkid=9eb344a1b67511ec879f0992ab58cf87#user-s-guide)
 * [Jinga](https://palletsprojects.com/p/jinja/)
+* [mySQL](https://dev.mysql.com/doc/)
+
+
+
+
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
