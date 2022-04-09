@@ -13,6 +13,7 @@
 <!-- ABOUT THE PROJECT -->
 ## project brief
 
+## Video walkthrough of the fuctioning app
    <span align="center"> [![Music application](images/musicapp.jpg)](https://youtu.be/yawTCBhiI3M) </span>
 
 The project is a CRUD application built with the technologies outlined below.  The workspace was created by using tables created in MySQL connected to database server and a Virtual Machine created in Google Cloud.  The specifics of the app are to give users the ability to create a list of their favourite musicians/artists, add tracks to the artists and then generate a list of musicians and their music.  The update and delete functionality allows users to delete tracks from the list and to change the name of the artist.
@@ -33,6 +34,13 @@ Essentially the application is designed to demonstrate the implementation of lea
 
 
 ## Creating the Database
+
+The database was created using mySQL and the initial plan was to create three tables.  One to hold data for Artists, one to hold data for Tracks (one artist to many tracks) and one table to hold data for Albums (many tracks to many artists).  However as the MVP involved creating two tables the tables Artist and Music were implemented first as these would form the core functionality of the application.  The EDR diagram shows the relationships for these tables.
+
+<br />
+<div align="center">
+    <img src="images/ERD_model.png" alt="Logo" width="80" height="80">
+</div>
 
 insert ERD table
 
