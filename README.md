@@ -64,7 +64,7 @@ A risk assessment was generated to ensure the build process went as smoothly as 
 ## User Stories 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <a name="user"/>
-implemented:
+Implemented:
 
 * **As a User I want to be able to enter a track name and an artist name, so that I can create a record of my favourite music**
 
@@ -74,7 +74,7 @@ implemented:
 
 * **As a User I want to be able to delete tracks that I have added as my tastes might change**
 
-not implemented
+Not implemented:
 
 * **As a User I want to create records about my favourite artists so I can check their gig schedule and access their musician webpage**
 
@@ -189,6 +189,7 @@ Within Jenkins a link to the github repository (hosting the source code) was mad
 
 
 <a name="issues"/>
+
 ## Issues
 
 During the design stage the initial application had three tables.  The first two were Artists and Music and the third was going to be album.  This would have allowed created an additional relationship of many Artists to one Album.  Whilst at the beginning stage I did not feel this to be too ambitious, however due to tutor absence resuting in scaled back support, the more realistic decision was to create a more basic app which functioned well and met the MVP requirements.    
@@ -198,7 +199,9 @@ There were also some issues whilst developing the app with the connection string
 In terms of the infrastructure issues also arose due to my VM having 1GB of RAM.  As the application became more complex the operations took longer and eventually began to seize.  With tutor support I was able to upgrade the VM whilst maintaining persistent data storage.
 
 <a name="future"/>
+
 ## Future Considerations
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 Given more time I would consider adding more functionality to the app by adding the Album table and also adding a further column to the Artist and Music tables where Users could access the URL of the Artist and potentially listen to the track.
