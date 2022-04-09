@@ -187,6 +187,10 @@ Within Jenkins a link to the github repository (hosting the source code) was mad
 <div align="center">
     <img src="images/jenkins_build_console.PNG" alt="Logo" width="1000" height="350">
 </div>
+<p></p>
+<div align="center">
+    <img src="images/jenkins_green.PNG" alt="Logo" width="1000" height="400">
+</div>
 
 
 <a name="issues"/>
